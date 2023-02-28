@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'vannes.lamy.ir4en'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "vannes.lamy.ir4en"
