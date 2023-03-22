@@ -41,5 +41,9 @@ TextView welcome;
     public void callPhone(View v){
         startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:0102030203")));
     }
+    public void callVideo(View v){
+        Intent i=new Intent(HomeActivity.this,VideoActivity.class);
+        startActivity(i);
+    }
 
 }
