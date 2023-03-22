@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">IR4EN</string>
-    <string name="welcome">Welcome</string>
+    <string name="app_name">Ir4EN</string>
+    <string name="welcome">Validate</string>
+    <string name="close">Close</string>
+    <string name="validate">Validate</string>
+    <string name="clear">Clear</string>
+    <string name="hintlogin">Write a  Login</string>
+    <string name="hintPWD">Write a Password</string>
+    <string name="todo">TODO</string>
 </resources>
