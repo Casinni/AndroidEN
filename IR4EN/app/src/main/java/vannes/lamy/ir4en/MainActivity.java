@@ -2,6 +2,7 @@ package vannes.lamy.ir4en;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText login, password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,11 @@ EditText login, password;
     }
     public void actionValidate(View v){
         Toast.makeText(this, "Welcome",Toast.LENGTH_SHORT).show();
+        Intent i=new Intent(MainActivity.this,HomeActivity.class);
+        //define a message with login in the intent to send HomeActivity
+        i.putExtra("msg",login.getText().toString());
+        //start HomeActivity
+        startActivity(i);
     }
     public void actionClear(View v){
         //reset login and password
