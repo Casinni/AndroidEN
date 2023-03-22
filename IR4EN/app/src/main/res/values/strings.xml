@@ -7,4 +7,11 @@
     <string name="hintlogin">Write a  Login</string>
     <string name="hintPWD">Write a Password</string>
     <string name="todo">TODO</string>
+    <string name="login">brigitte</string>
+    <string name="pwd">macron</string>
+    <string name="alarm">ALARM</string>
+    <string name="esaip">ESAIP</string>
+    <string name="call">CALL PHONE</string>
+    <string name="email">EMAIL</string>
+    <string name="video">VIDEO</string>
 </resources>

@@ -20,12 +20,21 @@ EditText login, password;
         password=findViewById(R.id.pwd);
     }
     public void actionValidate(View v){
-        Toast.makeText(this, "Welcome",Toast.LENGTH_SHORT).show();
-        Intent i=new Intent(MainActivity.this,HomeActivity.class);
-        //define a message with login in the intent to send HomeActivity
-        i.putExtra("msg",login.getText().toString());
-        //start HomeActivity
-        startActivity(i);
+        //get login and pwd from strings.xml
+        String loginOk=getResources().getString(R.string.login);
+        String pwdOk=getResources().getString(R.string.pwd);
+        if(login.getText().toString().equals(loginOk) &&
+        password.getText().toString().equals(pwdOk)) {
+            Intent i = new Intent(MainActivity.this, HomeActivity.class);
+            //define a message with login in the intent to send HomeActivity
+            i.putExtra("msg", login.getText().toString());
+            //start HomeActivity
+            startActivity(i);
+        }
+        else {
+            Toast.makeText(this, "Error Login and pwd", Toast.LENGTH_SHORT).show();
+            this.actionClear(v);
+        }
     }
     public void actionClear(View v){
         //reset login and password
