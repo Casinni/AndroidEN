@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NavigationBarFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragA">FragmentA</string>
+    <string name="fragB">FragmentB</string>
+    <string name="fragC">FragmentC</string>
+    <string name="fragHome">FragmentHome</string>
+</resources>
